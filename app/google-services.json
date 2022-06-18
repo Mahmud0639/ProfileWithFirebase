@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "538609835610",
+    "project_id": "authforassignmentneat",
+    "storage_bucket": "authforassignmentneat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538609835610:android:cdc3e65560d01f12068263",
+        "android_client_info": {
+          "package_name": "com.manuni.profilewithfirebaseneatrootsassignment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "538609835610-uebi0tiiq7e8qdhmbk6apjhislnjipen.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBULFi7crCgbiH-hwY-3ym3H6IAJC5L7rA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "538609835610-uebi0tiiq7e8qdhmbk6apjhislnjipen.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

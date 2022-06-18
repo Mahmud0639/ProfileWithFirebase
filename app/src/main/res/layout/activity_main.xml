@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777272"
+    tools:context=".MainActivity" >
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:progressDrawable="@drawable/progress_bg"
+        android:indeterminate="false"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progressBar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp"
+            android:textSize="22sp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/consLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/myAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="My Account"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="35dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"/>
+                    <EditText
+                        android:id="@+id/emailET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Email Address"
+                        app:layout_constraintTop_toBottomOf="@id/myAccount"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"/>
+                    <EditText
+                        android:id="@+id/passET"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        app:layout_constraintStart_toStartOf="@id/emailET"
+                        app:layout_constraintTop_toBottomOf="@id/emailET"
+                        app:layout_constraintEnd_toEndOf="@id/emailET"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/donthaveAccount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Don't have an account?"
+                        app:layout_constraintTop_toBottomOf="@id/passET"
+                        app:layout_constraintEnd_toEndOf="@id/passET"
+                        android:layout_marginTop="10dp"/>
+                    <Button
+                        android:id="@+id/signInBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/donthaveAccount"
+                        app:layout_constraintStart_toStartOf="@id/passET"
+                        app:layout_constraintEnd_toEndOf="@id/passET"
+                        android:layout_marginTop="20dp"
+                        android:text="Sign In"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profilePic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/mpl6"
+            app:layout_constraintTop_toTopOf="@id/consLayout"
+            app:layout_constraintStart_toStartOf="@id/consLayout"
+            app:layout_constraintEnd_toEndOf="@id/consLayout"
+            app:layout_constraintBottom_toTopOf="@id/consLayout"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_plus_svgrepo_com"
+            app:layout_constraintBottom_toBottomOf="@id/profilePic"
+            app:layout_constraintEnd_toEndOf="@id/profilePic"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@id/profilePic"
+            app:layout_constraintTop_toTopOf="@id/profilePic"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
